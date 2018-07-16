@@ -1,3 +1,4 @@
+library(randomForest)
 train <- read.csv("D:/practice/zs/7e2ae14e-8-dataset/dataset/train.csv")
 train$CASE_SUBMITTED_DAY = as.Date(paste(train$CASE_SUBMITTED_DAY,"-",train$CASE_SUBMITTED_MONTH,"-",train$CASE_SUBMITTED_YEAR, sep=""), format = "%d-%m-%Y")
 train$DECISION_DAY = as.Date(paste(train$DECISION_DAY,"-",train$DECISION_MONTH,"-",train$DECISION_YEAR, sep = ""), format = "%d-%m-%Y")
